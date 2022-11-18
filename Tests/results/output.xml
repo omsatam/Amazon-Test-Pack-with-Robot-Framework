@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.9.6 on win32)" generated="20221108 15:18:53.089" rpa="false" schemaversion="3">
+<suite id="s1" name="Amazon" source="C:\Users\osatam\learning\python\Robot framework\robot-scripts\amazon\Tests\amazon.robot">
+<test id="s1-t1" name="User must sign in to check out" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://amazon.in/</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221108 15:18:53.863" level="INFO">Opening browser 'edge' to base url 'https://amazon.in/'.</msg>
+<status status="PASS" starttime="20221108 15:18:53.861" endtime="20221108 15:19:01.435"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign in for your best experience</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221108 15:19:01.440" endtime="20221108 15:19:01.587"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>apple digital watch</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221108 15:19:01.590" level="INFO">Typing text 'apple digital watch' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20221108 15:19:01.588" endtime="20221108 15:19:02.191"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221108 15:19:02.193" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20221108 15:19:02.192" endtime="20221108 15:19:05.527"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>results for "apple digital watch"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221108 15:19:05.528" endtime="20221108 15:19:05.667"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[4]/div/div/div/div/div/div[2]/div/div/div[1]/h2/a/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221108 15:19:05.670" level="INFO">Clicking element 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[4]/div/div/div/div/div/div[2]/div/div/div[1]/h2/a/span'.</msg>
+<msg timestamp="20221108 15:19:06.404" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221108 15:19:06.405" level="FAIL">Element with locator 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[4]/div/div/div/div/div/div[2]/div/div/div[1]/h2/a/span' not found.</msg>
+<status status="FAIL" starttime="20221108 15:19:05.669" endtime="20221108 15:19:06.412"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>locator=NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20221108 15:19:06.414" endtime="20221108 15:19:06.414"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Back to results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221108 15:19:06.415" endtime="20221108 15:19:06.415"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221108 15:19:06.416" endtime="20221108 15:19:06.416"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20221108 15:19:06.416" endtime="20221108 15:19:06.416"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Added to Cart</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221108 15:19:06.417" endtime="20221108 15:19:06.417"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>id=attach-sidesheet-checkout-button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221108 15:19:06.417" endtime="20221108 15:19:06.418"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=attach-sidesheet-checkout-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221108 15:19:06.418" endtime="20221108 15:19:06.418"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign in</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221108 15:19:06.419" endtime="20221108 15:19:06.419"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>id=createAccountSubmit</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20221108 15:19:06.419" endtime="20221108 15:19:06.419"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221108 15:19:06.420" endtime="20221108 15:19:06.420"/>
+</kw>
+<doc>[Tags] Smoke</doc>
+<status status="FAIL" starttime="20221108 15:18:53.853" endtime="20221108 15:19:06.421">Element with locator 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[4]/div/div/div/div/div/div[2]/div/div/div[1]/h2/a/span' not found.</status>
+</test>
+<doc>This is basic info about whole suite</doc>
+<status status="FAIL" starttime="20221108 15:18:53.097" endtime="20221108 15:19:06.425"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Amazon">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
