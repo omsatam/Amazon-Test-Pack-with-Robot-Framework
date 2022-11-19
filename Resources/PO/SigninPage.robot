@@ -19,8 +19,8 @@ ${getOTPButon} =  id=auth-login-via-otp-btn
 ${incorrectOTPInput} =  1235
 ${OTPSelector} =  id=cvf-input-code
 ${submitOTPButton} =  id=cvf-submit-otp-button
-${userNumber} =  9326889265
-${userPassword} =  Testing@123
+${userNumber} =  <amazon-phone-number>
+${userPassword} = <amazon-password>
 *** Keywords ***
 
 Verify sign in
